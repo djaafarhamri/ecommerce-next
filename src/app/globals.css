@@ -2,17 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+body {
+  background: #e3e5e6;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.main {
+  ::-webkit-scrollbar {width: 5px;}
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4a586e; border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a586e;
   }
 }
+
 
